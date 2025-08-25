@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ config('app.name', 'Laravel') }}</title>
     @viteReactRefresh
-    @vite('resources/js/app.jsx')
+    @vite('resources/js/main.jsx')
 </head>
 <body class="antialiased">
-    @inertia
+    <div id="app"></div> {{-- contenedor donde React montará la app --}}
 </body>
 </html>
